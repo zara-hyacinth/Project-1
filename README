@@ -1,1 +1,93 @@
+// Project 1: You're the Host! - Knowledge Quiz
 
+// 1. My Program Idea
+I am building a **Pop Culture & Tech Knowledge Quiz**. The user plays as a contestant on a game show, answering trivia questions. To make it interactive and hit the required code, giving a wrong answer triggers a "Second Chance" code where they can try again for half points.
+
+
+// 2. My Questions and Answer Options
+The quiz will consist of 5 multiple-choice questions to ensure clear user messaging:
+
+1. //Question 1 (Tech history):// Who co-founded Apple alongside Steve Jobs?
+/ a) Bill Gates
+/ b) Steve Wozniak
+/c) Mark Zuckerberg
+2. //Question 2 (Gaming):// Which video game is the best-selling of all time?
+/ a) Minecraft
+/ b) Grand Theft Auto V
+/ c) Tetris
+3. //Question 3 (Action):// In 'Black Panther', what netal do the Wakandans have?
+/ a) Titanium
+/ b) Vibranium
+/ c) Nickel
+4. //Question 4 (Internet):// Which social mdeia platform was banned for less than a day?
+/ a) TikTok
+/ b) Youtube
+/ c) Instagram
+5. //Question 5 (Bonus):// True or False: Python was named after a snake.
+/ a) True
+/ b) False
+
+// 3. My Variables and What They Track
+/ `score` (Float): Keeps track of the user's total running points (starts at 0.0).
+/ `user_choice` (String): Temporary variable used to capture the user's input for each question.
+/ `second_chance` (String): Temporary variable used to capture the input if a user gets a second attempt at a question.
+
+// 4. My Conditional Logic Map
+
+// Question 1 Logic:
+//IF// `user_choice == "b"`:
+/ Add 1.0 to `score`. Print success message.
+//ELSE//:
+/ Offer a second chance.
+//NESTED IF// `second_chance == "b"`:
+/ Add 0.5 to `score`. Print partial credit message.
+//NESTED ELSE//:
+/ Print wrong answer message and reveal the correct answer.
+
+// Question 2 Logic:
+//IF/ `user_choice == "a"`:
+/ Add 1.0 to `score`. Print success message.
+//ELSE//:
+/ Offer a second chance.
+//NESTED IF// `second_chance == "a"`:
+/Add 0.5 to `score`. Print partial credit message.
+//NESTED ELSE//:
+/ Print wrong answer message.
+
+// Question 3 Logic:
+//IF// `user_choice == "a"`:
+/Add 1.0 to `score`. Print success message.
+//ELSE//:
+/ Offer a second chance.
+//NESTED IF// `second_chance == "a"`:
+/ Add 0.5 to `score`. Print partial credit message.
+//NESTED ELSE//:
+* Print wrong answer message.
+
+// Question 4 Logic:
+//IF** `user_choice == "a"`:
+/Add 1.0 to `score`. Print success message.
+//ELSE//:
+/Offer a second chance.
+//NESTED IF// `second_chance == "a"`:
+/ Add 0.5 to `score`. Print partial credit message.
+//NESTED ELSE//:
+/Print wrong answer message.
+
+//Question 5 Logic:
+//IF// `user_choice == "b"`:
+/ Add 1.0 to `score`. Print success message.
+//ELSE//:
+/Offer a second chance.
+//NESTED IF// `second_chance == "b"`:
+/ Add 0.5 to `score`. Print partial credit message.
+///NESTED ELSE//:
+/ Print wrong answer message.
+
+/// Final Scoring Logic (Logical Operators Requirement):
+//IF// `score >= 4.0` //and// `score <= 5.0`:
+/ Print: "Grand Champion! Perfect or near-perfect score!"
+//ELIF// `score >= 2.5` //and// `score < 4.0`:
+/ Print: "Good job! You passed the quiz."
+//ELSE//:
+/ Print: "Better luck next time!"
